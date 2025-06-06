@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: block;
+    font-size: large;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+
+.full {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #cfe6de;
+}
+
+.window {
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    background-color: #79a094;
+    display: flex;
+}
+
+.options-container {
+    flex: 2 0 0;
+    background-color: #557a6f;
+    padding: 20px 0;
+}
+
+.tab-container {
+    flex: 1 0 0;
+    background-color: #465f58;
+    display: flex;
+    flex-direction: column;
+}
+
+.character-window {
+    flex: 6 0 0;
+    display: flex;
+}
+
+.character {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.character>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+}
+
+/* tab styling */
+.tab {
+    background-color: #465f58;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    border: none;
+    display: inline-block;
+    flex: 1 0 0;
+}
+
+.active {
+    background-color: #314741;
+    color: #fff;
+}
+
+/* images */
+.back-hair {
+    background-image: url(assets/backhair.webp);
+}
+
+.body {
+    background-image: url(assets/body.webp);
+}
+
+.front-hair {
+    background-image: url(assets/fronthair.webp);
+}
+
+.pant {
+    background-image: url(assets/pant1.webp);
+}
+
+.shirt {
+    background-image: url(assets/shirt1.webp);
+}
+
+.shoe {
+    background-image: url(assets/shoe.webp);
+}

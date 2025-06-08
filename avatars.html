@@ -11,29 +11,105 @@
 
 <body>
     <div class="full">
+        <div class="intro">
+            <div class="intro-content">
+                <h1>avatars</h1>
+                <p>hello :) everything is hand-coded and hand-drawn! unfortunately that means this will NOT work as
+                    intended on a phone (char has not learnt responsive coding. L) this was tested in firefox at
+                    2400x1600, but should work with minimal errors in other desktop resolutions!</p>
+                <button class="close">close</button>
+            </div>
+        </div>
         <div class="window">
             <div class="options-container">
-                <div class="shirts options">
-                    <button class="option" data-item-type="shirt" data-number="1">shirt 1</button>
-                    <button class="option" data-item-type="shirt" data-number="2">shirt 2</button>
+                <div class="features options">
+                    <div class="wrapper">
+                        <h3>skintones</h3>
+                        <div class="skintones">
+                            <button class="option" data-item-type="body" data-number="1"
+                                style="background-color: #e9ded5;"></button>
+                            <button class="option" data-item-type="body" data-number="2"
+                                style="background-color: #e0d1c5;"></button>
+                            <button class="option" data-item-type="body" data-number="3"
+                                style="background-color: #e4d4bf;"></button>
+                            <button class="option" data-item-type="body" data-number="4"
+                                style="background-color: #cdb39f;"></button>
+                            <button class="option" data-item-type="body" data-number="5"
+                                style="background-color: #aa9381;"></button>
+                            <button class="option" data-item-type="body" data-number="6"
+                                style="background-color: #9b8473;"></button>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <h3>eye colors</h3>
+                        <div class="eye-colors">
+                            <button class="option" data-item-type="eye" data-number="1"
+                                style="background-color: #867369;"></button>
+                            <button class="option" data-item-type="eye" data-number="2"
+                                style="background-color: #916264;"></button>
+                            <button class="option" data-item-type="eye" data-number="3"
+                                style="background-color: #9f9176;"></button>
+                            <button class="option" data-item-type="eye" data-number="4"
+                                style="background-color: #737e46;"></button>
+                            <button class="option" data-item-type="eye" data-number="5"
+                                style="background-color: #69866e;"></button>
+                            <button class="option" data-item-type="eye" data-number="6"
+                                style="background-color: #859e9e;"></button>
+                            <button class="option" data-item-type="eye" data-number="7"
+                                style="background-color: #696d86;"></button>
+                            <button class="option" data-item-type="eye" data-number="8"
+                                style="background-color: #8d7497;"></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="pants options">
-                    <button class="option" data-item-type="pant" data-number="1">pant 1</button>
-                    <button class="option" data-item-type="pant" data-number="2">pant 2</button>
+                <div class="headgear options">
+                    <button class="option" data-item-type="headgear" data-number="0">no headgear</button>
+                    <button class="option" data-item-type="headgear" data-number="1">headgear 1</button>
+                    <button class="option" data-item-type="headgear" data-number="2">headgear 2</button>
+                    <button class="option" data-item-type="headgear" data-number="3">headgear 3</button>
+
+                </div>
+                <div class="outfits options">
+                    <button class="option" data-item-type="outfit" data-number="1">outfit 1</button>
+                    <button class="option" data-item-type="outfit" data-number="2">outfit 2</button>
+                    <button class="option" data-item-type="outfit" data-number="3">outfit 3</button>
+                </div>
+                <div class="accessories options">
+                    <button class="option" data-item-type="accessory" data-number="0">no accessory</button>
+                    <button class="option" data-item-type="accessory" data-number="1">accessory 1</button>
+                    <button class="option" data-item-type="accessory" data-number="2">accessory 2</button>
+                    <button class="option" data-item-type="accessory" data-number="3">accessory 3</button>
                 </div>
             </div>
             <div class="tab-container">
-                <button class="tab" data-type-of-clothing="shirts">shirts</button>
-                <button class="tab" data-type-of-clothing="pants">pants</button>
+                <button class="tab" data-type-of-clothing="features">features</button>
+                <button class="tab" data-type-of-clothing="headgear">headgear</button>
+                <button class="tab" data-type-of-clothing="outfits">outfits</button>
+                <button class="tab" data-type-of-clothing="accessories">accessories</button>
             </div>
             <div class="character-window">
                 <div class="character">
-                    <div class="back-hair"></div>
-                    <div class="body"></div>
-                    <div class="front-hair"></div>
-                    <div class="pant"></div>
-                    <div class="shirt"></div>
-                    <div class="shoe"></div>
+                    <div class="body-img"></div>
+                    <div class="eye-img"></div>
+                    <div class="outfit-img"></div>
+                    <div class="headgear-img"></div>
+                    <div class="accessory-img"></div>
+                </div>
+                <div class="headgear-flavor flavor-text">
+                    <h3 class="flavor-title">no headgear selected</h3>
+                    <p class="flavor-desc">baldie ???</p>
+                </div>
+                <div class="outfit-flavor flavor-text">
+                    <h3 class="flavor-title">king's robes</h3>
+                    <p class="flavor-desc">o7</p>
+                </div>
+                <div class="accessory-flavor flavor-text">
+                    <h3 class="flavor-title">no accessory selected</h3>
+                    <p class="flavor-desc">boring.</p>
+                </div>
+                <div class="set-flavor flavor-text">
+                    <h3 class="flavor-title">try to find sets!</h3>
+                    <p class="flavor-desc">equip all items from a set to discover bonus content !!</p>
                 </div>
             </div>
         </div>

@@ -15,6 +15,35 @@ button {
     height: 100vh;
     display: flex;
     background-color: #cfe6de;
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    top: 5vh;
+    left: 5vw;
+    flex: 0 0 0;
+    background-color: #5f9887;
+    z-index: 2;
+    display: flex;
+}
+
+.intro-content {
+    margin: auto;
+}
+
+h1,
+h2,
+p {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 16pt;
 }
 
 .window {
@@ -28,7 +57,11 @@ button {
 .options-container {
     flex: 2 0 0;
     background-color: #557a6f;
-    padding: 20px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .tab-container {
@@ -41,12 +74,14 @@ button {
 .character-window {
     flex: 6 0 0;
     display: flex;
+    position: relative;
+    min-height: 0;
 }
 
 .character {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 750px;
+    height: 750px;
     margin: auto;
 }
 
@@ -54,8 +89,9 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
-    height: 500px;
+    width: 750px;
+    height: 750px;
+    background-size: 750px;
 }
 
 /* tab styling */
@@ -74,27 +110,99 @@ button {
     color: #fff;
 }
 
+/* features tab styling */
+.wrapper {
+    background-color: #bad0e4;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 0 20px 0;
+}
+
+.wrapper>h3 {
+    margin: 0 0 10px 0;
+}
+
+.features .option {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 3px solid #324c64;
+}
+
+.skintones {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+.eye-colors {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    width: fit-content;
+    justify-content: space-evenly;
+
+}
+
 /* images */
-.back-hair {
-    background-image: url(assets/backhair.webp);
+.body-img {
+    background-image: url(assets/body1.webp);
 }
 
-.body {
-    background-image: url(assets/body.webp);
+.eye-img {
+    background-image: url(assets/eye1.webp);
 }
 
-.front-hair {
-    background-image: url(assets/fronthair.webp);
+.outfit-img {
+    background-image: url(assets/outfit1.webp);
 }
 
-.pant {
-    background-image: url(assets/pant1.webp);
+/* flavor text */
+.flavor-text {
+    position: absolute;
+    width: 10vw;
+    padding: 10px;
+    background: #ffffffe6;
+    border-radius: 8px;
+    z-index: 1;
 }
 
-.shirt {
-    background-image: url(assets/shirt1.webp);
+.headgear-flavor {
+    top: 20%;
+    left: 7.5%;
 }
 
-.shoe {
-    background-image: url(assets/shoe.webp);
+.outfit-flavor {
+    top: 30%;
+    right: 7.5%;
+}
+
+.accessory-flavor {
+    top: 50%;
+    left: 7.5%;
+}
+
+.set-flavor {
+    bottom: 1%;
+    right: 1%;
+}
+
+.set-flavor.active {
+    display: block;
+    border: 2px solid gold;
+    background-color: #faf3cf;
+}
+
+.flavor-title {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.flavor-desc {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
 }

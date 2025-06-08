@@ -79,25 +79,21 @@ function changeTabs(option) {
 
 function checkForSet() {
     let setFlavor = document.querySelector('.set-flavor');
-    setFlavor.querySelector('.flavor-title').textContent = "try to find sets!";
-    setFlavor.querySelector('.flavor-desc').textContent = "equip all items from a set to discover bonus content !!";
-    setFlavor.classList.remove('active');
 
-    let numbers = Object.values(currentSelections);
-    let setNumber = numbers[0];
+    let headgearSet = currentSelections.headgear;
+    let outfitSet = currentSelections.outfit;
+    let accessorySet = currentSelections.accessory;
 
-    let allMatch = true;
-    for (let i = 1; i < numbers.length; i++) {
-        if (numbers[i] !== setNumber) {
-            allMatch = false;
-            break;
-        }
-    }
+    let allMatch = (headgearSet == outfitSet && outfitSet == accessorySet)
 
     if (allMatch) {
-        setFlavor.querySelector('.flavor-title').textContent = setDescriptions[setNumber][0];
-        setFlavor.querySelector('.flavor-desc').textContent = setDescriptions[setNumber][1];
+        setFlavor.querySelector('.flavor-title').textContent = setDescriptions[headgearSet][0];
+        setFlavor.querySelector('.flavor-desc').textContent = setDescriptions[headgearSet][1];
         setFlavor.classList.add('active');
+    } else {
+        setFlavor.querySelector('.flavor-title').textContent = "try to find sets!";
+        setFlavor.querySelector('.flavor-desc').textContent = "equip all items from a set to discover bonus content !!";
+        setFlavor.classList.remove('active');
     }
 }
 

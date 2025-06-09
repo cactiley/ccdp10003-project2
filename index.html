@@ -7,16 +7,27 @@
     <title>avatars - an exploration of self-expression</title>
     <link rel="stylesheet" href="style.css">
     <script src="code.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="full">
         <div class="intro">
             <div class="intro-content">
-                <h1>avatars</h1>
-                <p>hello :) everything is hand-coded and hand-drawn! unfortunately that means this will NOT work as
-                    intended on a phone (char has not learnt responsive coding. L) this was tested in firefox at
-                    2400x1600, but should work with minimal errors in other desktop resolutions!</p>
+                <h1>Avatars — An Exploration of Self-Expression</h1>
+                <p>Welcome! Our project is an exploration of the impact virtual avatars have had on self-expression, in
+                    the format of a classic 2000s online dress-up game. We aim to represent the multifaceted ways in
+                    which avatars have revolutionised how we define and create selfhood in gaming cultures and beyond.
+                    Customise your avatar and explore the outfits and accessories! Choose the right combinations to
+                    learn more...</p>
+                <p>The entirety of the website is hand-coded, and all of the art was hand-drawn! Unfortunately, that
+                    means that this will NOT work as intended on a phone (Char has not learnt responsive coding. L).
+                    This site was tested in Firefox at 2400x1600, but should work with minimal errors in other desktop
+                    browsers and resolutions!</p>
                 <button class="close">close</button>
             </div>
         </div>
@@ -24,7 +35,7 @@
             <div class="options-container">
                 <div class="features options">
                     <div class="wrapper">
-                        <h3>skintones</h3>
+                        <h2>skintones</h2>
                         <div class="skintones">
                             <button class="option" data-item-type="body" data-number="1"
                                 style="background-color: #e9ded5;"></button>
@@ -41,7 +52,7 @@
                         </div>
                     </div>
                     <div class="wrapper">
-                        <h3>eye colors</h3>
+                        <h2>eye colors</h2>
                         <div class="eye-colors">
                             <button class="option" data-item-type="eye" data-number="1"
                                 style="background-color: #867369;"></button>
@@ -63,22 +74,54 @@
                     </div>
                 </div>
                 <div class="headgear options">
-                    <button class="option" data-item-type="headgear" data-number="0">no headgear</button>
-                    <button class="option" data-item-type="headgear" data-number="1">headgear 1</button>
-                    <button class="option" data-item-type="headgear" data-number="2">headgear 2</button>
-                    <button class="option" data-item-type="headgear" data-number="3">headgear 3</button>
-
+                    <button class="option" data-item-type="headgear" data-number="0"><img src="assets/none-icon.webp"
+                            alt="red no symbol">
+                        <h2>no headgear</h2>
+                    </button>
+                    <button class="option" data-item-type="headgear" data-number="1">
+                        <img src="assets/headgear1-icon.webp" alt="pot">
+                        <h2>pot</h2>
+                    </button>
+                    <button class="option" data-item-type="headgear" data-number="2">
+                        <img src="assets/headgear2-icon.webp" alt="shaggy hair">
+                        <h2>shaggy hair</h2>
+                    </button>
+                    <button class="option" data-item-type="headgear" data-number="3"><img
+                            src="assets/headgear3-icon.webp" alt="blowout">
+                        <h2>blowout</h2>
+                    </button>
                 </div>
                 <div class="outfits options">
-                    <button class="option" data-item-type="outfit" data-number="1">outfit 1</button>
-                    <button class="option" data-item-type="outfit" data-number="2">outfit 2</button>
-                    <button class="option" data-item-type="outfit" data-number="3">outfit 3</button>
+                    <button class="option" data-item-type="outfit" data-number="1">
+                        <img src="assets/outfit1-icon.webp" alt="king's robes">
+                        <h2>king's robes</h2>
+                    </button>
+                    <button class="option" data-item-type="outfit" data-number="2">
+                        <img src="assets/outfit2-icon.webp" alt="no. 1 outfit">
+                        <h2>no. 1 outfit</h2>
+                    </button>
+                    <button class="option" data-item-type="outfit" data-number="3">
+                        <img src="assets/outfit3-icon.webp" alt="starlight serenade">
+                        <h2>starlight serenade</h2>
+                    </button>
                 </div>
                 <div class="accessories options">
-                    <button class="option" data-item-type="accessory" data-number="0">no accessory</button>
-                    <button class="option" data-item-type="accessory" data-number="1">accessory 1</button>
-                    <button class="option" data-item-type="accessory" data-number="2">accessory 2</button>
-                    <button class="option" data-item-type="accessory" data-number="3">accessory 3</button>
+                    <button class="option" data-item-type="accessory" data-number="0"><img src="assets/none-icon.webp"
+                            alt="red no symbol">
+                        <h2>no accessory</h2>
+                    </button>
+                    <button class="option" data-item-type="accessory" data-number="1"><img
+                            src="assets/accessory1-icon.webp" alt="guild tag">
+                        <h2>guild tag</h2>
+                    </button>
+                    <button class="option" data-item-type="accessory" data-number="2"><img
+                            src="assets/accessory2-icon.webp" alt="plumbob">
+                        <h2>plumbob</h2>
+                    </button>
+                    <button class="option" data-item-type="accessory" data-number="3"><img
+                            src="assets/accessory3-icon.webp" alt="rating scale">
+                        <h2>rating scale</h2>
+                    </button>
                 </div>
             </div>
             <div class="tab-container">
@@ -97,19 +140,26 @@
                 </div>
                 <div class="headgear-flavor flavor-text">
                     <h3 class="flavor-title">no headgear selected</h3>
-                    <p class="flavor-desc">baldie ???</p>
+                    <p class="flavor-quote">Such a shiny head!</p>
+                    <p class="flavor-desc">You sure you don't want a hat or some hair?</p>
                 </div>
                 <div class="outfit-flavor flavor-text">
                     <h3 class="flavor-title">king's robes</h3>
-                    <p class="flavor-desc">o7</p>
+                    <p class="flavor-quote">Garments befitting a legend. o7</p>
+                    <p class="flavor-desc">
+                        The royal attire of the beloved Minecraft Youtuber Technoblade (RIP). Both he and his character
+                        left a lasting impact on the Minecraft community, and a tribute to him appeared in the recent
+                        Minecraft movie in the form of a pig with a crown.
+                    </p>
                 </div>
                 <div class="accessory-flavor flavor-text">
                     <h3 class="flavor-title">no accessory selected</h3>
-                    <p class="flavor-desc">boring.</p>
+                    <p class="flavor-quote">Boring.</p>
+                    <p class="flavor-desc">Come on, pick something out!</p>
                 </div>
                 <div class="set-flavor flavor-text">
                     <h3 class="flavor-title">try to find sets!</h3>
-                    <p class="flavor-desc">equip all items from a set to discover bonus content !!</p>
+                    <p class="flavor-desc">Equip all items from a set to discover bonus content!</p>
                 </div>
             </div>
         </div>

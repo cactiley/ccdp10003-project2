@@ -3,7 +3,13 @@
     margin: 0;
 }
 
+html,
+body {
+    font-family: "Figtree", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 button {
+    font-family: "Figtree", Verdana, Geneva, Tahoma, sans-serif;
     display: block;
     font-size: large;
     padding: 10px 20px;
@@ -25,21 +31,35 @@ button {
     top: 5vh;
     left: 5vw;
     flex: 0 0 0;
-    background-color: #5f9887;
+    background-color: #72a792;
     z-index: 2;
     display: flex;
+    border-radius: 20px;
 }
 
 .intro-content {
     margin: auto;
+    padding: 0 30px;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro p {
+    padding: 10px 20px;
+    text-align: justify;
 }
 
 h1,
 h2,
-p {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h3 {
+    font-family: "Corben", serif;
+}
+
+h2 {
+    font-size: 14pt;
 }
 
 p {
@@ -52,6 +72,7 @@ p {
     margin: auto;
     background-color: #79a094;
     display: flex;
+    border-radius: 20px;
 }
 
 .options-container {
@@ -62,6 +83,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: 20px 0 0 20px;
+    overflow: auto;
 }
 
 .tab-container {
@@ -103,9 +126,15 @@ p {
     border: none;
     display: inline-block;
     flex: 1 0 0;
+    font-family: "Corben", serif;
+    font-size: 16pt;
 }
 
-.active {
+.tab:hover {
+    background-color: #3e524c;
+}
+
+.tab.active {
     background-color: #314741;
     color: #fff;
 }
@@ -118,8 +147,8 @@ p {
     margin: 0 0 20px 0;
 }
 
-.wrapper>h3 {
-    margin: 0 0 10px 0;
+.wrapper>h2 {
+    margin: 0 0 15px 0;
 }
 
 .features .option {
@@ -127,6 +156,10 @@ p {
     height: 60px;
     border-radius: 8px;
     border: 3px solid #324c64;
+}
+
+.features .option:hover {
+    box-shadow: 2px 2px 2px #abc7e1;
 }
 
 .skintones {
@@ -146,6 +179,23 @@ p {
 
 }
 
+.option {
+    background-color: #bad0e4;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 0 20px 0;
+    width: 310px;
+    border: none;
+}
+
+.option img {
+    width: 250px;
+}
+
+.option:hover {
+    background-color: #8296a9;
+}
+
 /* images */
 .body-img {
     background-image: url(assets/body1.webp);
@@ -163,8 +213,10 @@ p {
 .flavor-text {
     position: absolute;
     width: 10vw;
+    height: 15vh;
+    overflow: auto;
     padding: 10px;
-    background: #ffffffe6;
+    background: #ffffffdd;
     border-radius: 8px;
     z-index: 1;
 }
@@ -185,8 +237,10 @@ p {
 }
 
 .set-flavor {
-    bottom: 1%;
-    right: 1%;
+    bottom: 2%;
+    right: 2%;
+    width: 13vw;
+    height: 20vh;
 }
 
 .set-flavor.active {
@@ -197,12 +251,18 @@ p {
 
 .flavor-title {
     margin: 0 0 5px 0;
-    font-size: 16px;
+    font-size: 11px;
     color: #333;
 }
 
+.flavor-quote {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
 .flavor-desc {
-    margin: 0;
     font-size: 14px;
     color: #666;
 }
